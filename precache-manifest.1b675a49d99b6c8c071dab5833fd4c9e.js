@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/reactjs-web3/static/js/main.ab717658.chunk.js"
   },
   {
-    "revision": "cfbda0e9061432ca6501",
-    "url": "/reactjs-web3/static/js/2.f213e47f.chunk.js"
+    "revision": "3c688a83c6a96b1bd515",
+    "url": "/reactjs-web3/static/js/2.f885ce20.chunk.js"
   },
   {
     "revision": "b294b1d95a459c57c2a1",
     "url": "/reactjs-web3/static/css/main.f024a92d.chunk.css"
   },
   {
-    "revision": "2c70e476d86665654cea34633fcba20e",
+    "revision": "95b3974d3e20d69a5fa1655fe8f397ae",
     "url": "/reactjs-web3/index.html"
   }
 ];
