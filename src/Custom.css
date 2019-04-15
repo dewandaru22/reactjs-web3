@@ -72,6 +72,13 @@ a:hover {
   background: #0065ff;
 }
 
+.Pink.is-active {
+  background: #f79bc3;
+}
+.Pink.selected {
+  background: #f79bc3;
+}
+
 .info {
   margin-top: 40px;
   text-align: center;
