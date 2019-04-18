@@ -34,9 +34,15 @@ class App extends Component {
       <div>
 				<span className={"selected "+this.state.color}>{this.state.name}
         </span><br/><br/>
-        <input type="number" name="angka1" placeholder="angka 1" value={this.state.angka1} onChange={this.changeHandler.bind(this)}/>+
+        <input type="number" name="angka1" placeholder="angka 1" value={this.state.angka1} onChange={this.changeHandler.bind(this)}/>
+        <select name="operation" onChange={this.changeHandler.bind(this)}>
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="pow">*</option>
+          <option value="div">/</option>
+        </select>
         <input type="number" name="angka2" placeholder="angka 2" value={this.state.angka2} onChange={this.changeHandler.bind(this)}/> =
-        <span> {parseInt(this.state.angka1) + parseInt(this.state.angka2)}</span><br/><br/>
+        <span> {this.hitung()} </span><br/><br/>
 			</div>
       );
     }
@@ -58,6 +64,15 @@ class App extends Component {
     this.setState({
       angka1: event.target.value,
     });
+  }
+
+  hitung(){
+    switch(this.state.operation){
+      case 'plus': return parseInt(this.state.angka1) + parseInt(this.state.angka2);
+      case 'plus': return parseInt(this.state.angka1) + parseInt(this.state.angka2);
+      case 'plus': return parseInt(this.state.angka1) + parseInt(this.state.angka2);
+      case 'plus': return parseInt(this.state.angka1) + parseInt(this.state.angka2);
+    }
   }
   
   /*menusaya(){
