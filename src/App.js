@@ -22,6 +22,8 @@ class App extends Component {
       name: menu.name,
       color: menu.color,
       img: menu.img,
+      angka1: 0,
+      angka2: 0,
     });
   }
   
@@ -32,10 +34,9 @@ class App extends Component {
       <div>
 				<span className={"selected "+this.state.color}>{this.state.name}
         </span><br/><br/>
-        <input type="number" placeholder="angka 1"/>+
-        <input type="number" placeholder="angka 2"/> =
-        <span> ...</span><br/><br/>
-        <button>Hitung</button>
+        <input type="number" name="angka1" placeholder="angka 1" value={this.state.angka1} onChange={this.changeHandler.bind(this)}/>+
+        <input type="number" name="angka2" placeholder="angka 2" value={this.state.angka2} onChange={this.changeHandler.bind(this)}/> =
+        <span> {parseInt(this.state.angka1) + parseInt(this.state.angka2)}</span><br/><br/>
 			</div>
       );
     }
@@ -51,6 +52,12 @@ class App extends Component {
       </div>
       );
     }
+  }
+
+  changeHandler(event){
+    this.setState({
+      angka1: event.target.value,
+    });
   }
   
   /*menusaya(){
