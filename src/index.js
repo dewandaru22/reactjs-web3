@@ -29,6 +29,10 @@ const items = [
         name    : 'Calculator',
         color   : 'Pink',
     },
+    {
+        name    : 'Profile',
+        color   : 'Orange',
+    },
 ];
 
 ReactDOM.render(<App items={items} />, document.getElementById('root'));
