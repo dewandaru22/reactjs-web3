@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { EventEmitter } from 'events';
 import Profile from './Profile.js';
 import Calculator from './Calculator';
 
@@ -14,9 +13,6 @@ class App extends Component {
       name: 'Atta',
       color: 'Merah',
       img: 'atta.jpg',
-      angka1: 0,
-      angka2: 0,
-      operation: 'plus',
 		};
 	}
 	
@@ -38,7 +34,7 @@ class App extends Component {
     }
     else if(name=='Profile'){
       //display menu Profile
-      return <Profile></Profile>;
+      return <Profile nama="Say"/>;
     }
     else{
       //display default
@@ -51,21 +47,6 @@ class App extends Component {
         {/* {this.menusaya()} */} 
       </div>
       );
-    }
-  }
-
-  changeHandler(event){
-    this.setState({
-      [event.target.name]: event.target.value
-    });
-  }
-
-  hitung(){
-    switch(this.state.operation){
-      case 'plus': return parseInt(this.state.angka1) + parseInt(this.state.angka2);
-      case 'minus': return parseInt(this.state.angka1) - parseInt(this.state.angka2);
-      case 'pow': return parseInt(this.state.angka1) * parseInt(this.state.angka2);
-      case 'div': return parseInt(this.state.angka1) / parseInt(this.state.angka2);
     }
   }
   

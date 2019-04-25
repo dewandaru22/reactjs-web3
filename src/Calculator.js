@@ -32,7 +32,7 @@ class Calculator extends Component {
               <select name="operation" onChange={this.changeHandler.bind(this)}>
                 <option value="plus">+</option>
                 <option value="minus">-</option>
-                <option value="pow">*</option>
+                <option value="pow">x</option>
                 <option value="div">:</option>
               </select>
               <input type="number" name="angka2" placeholder="angka 2" value={this.state.angka2} onChange={this.changeHandler.bind(this)}/> =
