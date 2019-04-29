@@ -4,6 +4,7 @@ import './App.css';
 import Profile from './Profile.js';
 import Calculator from './Calculator';
 
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -13,7 +14,9 @@ class App extends Component {
       name: 'Atta',
       color: 'Merah',
       img: 'atta.jpg',
-		};
+    };
+    
+ 
 	}
 	
 	clicked(menu) {
